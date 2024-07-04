@@ -1,6 +1,6 @@
-# PE File Parser
+# AGHD
 
-PE File Parser 是一个解析 PE 文件导入表并生成可劫持 DLL 源代码的工具。
+AGHD 是一个解析 PE 文件导入表并生成可劫持 DLL 源代码的工具。
 
 ## 特性
 
@@ -23,10 +23,10 @@ go build -o AGHD.exe cmd/cmd.go
 ```sh
 .\AGHD.exe -h
 NAME:
-   PE File Parser - Parses PE file import tables and generates hijackable DLL source code
+   AGHD - Parses PE file import tables and generates hijackable DLL source code
 
 USAGE:
-   PE File Parser [global options] command [command options]
+   AGHD [global options] command [command options]
 
 COMMANDS:
    help, h  Shows a list of commands or help for one command
