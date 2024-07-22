@@ -1,6 +1,6 @@
-# AGHD
+# RTDllHijack
 
-AGHD 是一个解析 PE 文件导入表并生成可劫持 DLL 源代码的工具。
+RTDllHijack 是一个解析 PE 文件导入表并生成可劫持 DLL 源代码的工具。
 
 ## 特性
 
@@ -13,20 +13,20 @@ AGHD 是一个解析 PE 文件导入表并生成可劫持 DLL 源代码的工具
 ## 安装
 
 ```sh
-git clone https://github.com/aeverj/AGHD.git
-cd AGHD
+git clone https://github.com/aeverj/RTDllHijack.git
+cd RTDllHijack
 go mod tidy
-go build -o AGHD.exe cmd/cmd.go
+go build -o RTDllHijack.exe cmd/cmd.go
 ```
 
 ## Usage
 ```sh
-.\AGHD.exe -h
+.\RTDllHijack.exe -h
 NAME:
-   AGHD - Parses PE file import tables and generates hijackable DLL source code
+   RTDllHijack - Parses PE file import tables and generates hijackable DLL source code
 
 USAGE:
-   AGHD [global options] command [command options]
+   RTDllHijack [global options] command [command options]
 
 COMMANDS:
    help, h  Shows a list of commands or help for one command
@@ -42,15 +42,15 @@ GLOBAL OPTIONS:
 ```
 ## 获取所有C盘可执行文件dll劫持
 ```sh
-AGHD.exe -i C:\
+RTDllHijack.exe -i C:\
 ```
 ## 生成支持MingW编译器的源文件
 ```sh
-AGHD.exe -i C:\ -c mingw
+RTDllHijack.exe -i C:\ -c mingw
 ```
 ## 排除特定的文件或目录
 ```sh
-AGHD.exe -i C:\ -e admin
+RTDllHijack.exe -i C:\ -e admin
 ```
 ## 结果
 ```sh
