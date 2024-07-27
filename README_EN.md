@@ -58,8 +58,6 @@ AGHD.exe -i C:\ -e admin
 │  │      elscore.dll.cpp
 │  │      elscore.dll.def
 │  │      InputPersonalization.exe
-│  │      ntdll.dll.cpp
-│  │      ntdll.dll.def
 │  │      XmlLite.dll.cpp
 │  │      XmlLite.dll.def
 │  │
@@ -71,8 +69,6 @@ AGHD.exe -i C:\ -e admin
 │  │      mip.exe
 │  │      MSIMG32.dll.cpp
 │  │      MSIMG32.dll.def
-│  │      ntdll.dll.cpp
-│  │      ntdll.dll.def
 │  │      OLEACC.dll.cpp
 │  │      OLEACC.dll.def
 │  │      UxTheme.dll.cpp
@@ -85,8 +81,6 @@ AGHD.exe -i C:\ -e admin
 │  │      COMCTL32.dll.def
 │  │      DUI70.dll.cpp
 │  │      DUI70.dll.def
-│  │      ntdll.dll.cpp
-│  │      ntdll.dll.def
 │  │      ShapeCollector.exe
 │  │
 │  └─C__Program Files_Common Files_microsoft shared_MSInfo_msinfo32.exe
@@ -97,8 +91,6 @@ AGHD.exe -i C:\ -e admin
 │          MFC42u.dll.cpp
 │          MFC42u.dll.def
 │          msinfo32.exe
-│          ntdll.dll.cpp
-│          ntdll.dll.def
 │          POWRPROF.dll.cpp
 │          POWRPROF.dll.def
 │          SLC.dll.cpp
@@ -113,8 +105,6 @@ AGHD.exe -i C:\ -e admin
     │      APPVPOLICY.dll.def
     │      msi.dll.cpp
     │      msi.dll.def
-    │      ntdll.dll.cpp
-    │      ntdll.dll.def
     │      USERENV.dll.cpp
     │      USERENV.dll.def
     │
@@ -122,11 +112,6 @@ AGHD.exe -i C:\ -e admin
     │      AppVShNotify.exe
     │      USERENV.dll.cpp
     │      USERENV.dll.def
-    │
-    ├─C__Program Files_Common Files_microsoft shared_ClickToRun_InspectorOfficeGadget.exe
-    │      InspectorOfficeGadget.exe
-    │      mscoree.dll.cpp
-    │      mscoree.dll.def
     │
     └─C__Program Files_Common Files_microsoft shared_ClickToRun_IntegratedOffice.exe
             IntegratedOffice.exe
