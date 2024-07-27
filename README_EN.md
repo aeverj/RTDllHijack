@@ -1,6 +1,6 @@
-# AGHD
+# RTDllHijack
 
-AGHD is a tool that parses PE file import tables and generates hijackable DLL source code.
+RTDllHijack is a tool that parses PE file import tables and generates hijackable DLL source code.
 
 ## Features
 
@@ -13,19 +13,19 @@ AGHD is a tool that parses PE file import tables and generates hijackable DLL so
 ## Installation
 
 ```sh
-git clone https://github.com/aeverj/AGHD.git
-cd AGHD
+git clone https://github.com/aeverj/RTDllHijack.git
+cd RTDllHijack
 go mod tidy
-go build -o AGHD.exe cmd/cmd.go
+go build -o RTDllHijack.exe cmd/cmd.go
 ```
 ## Usage
 ```sh
-.\AGHD.exe -h
+.\RTDllHijack.exe -h
 NAME:
-   AGHD - Parses PE file import tables and generates hijackable DLL source code
+   RTDllHijack - Parses PE file import tables and generates hijackable DLL source code
 
 USAGE:
-   AGHD [global options] command [command options]
+   RTDllHijack [global options] command [command options]
 
 COMMANDS:
    help, h  Shows a list of commands or help for one command
@@ -41,15 +41,15 @@ GLOBAL OPTIONS:
 ```
 ## Parsing all C drive files
 ```sh
-AGHD.exe -i C:\
+RTDllHijack.exe -i C:\
 ```
 ## Generate source files that support the MingW compiler
 ```cgo
-AGHD.exe -i C:\ -c mingw
+RTDllHijack.exe -i C:\ -c mingw
 ```
 ## Exclude specific files or directories
 ```cgo
-AGHD.exe -i C:\ -e admin
+RTDllHijack.exe -i C:\ -e admin
 ```
 ## Result
 ```sh
