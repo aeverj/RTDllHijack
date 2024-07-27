@@ -23,5 +23,4 @@ jobs:
           goos: ${{ matrix.goos }}
           goarch: ${{ matrix.goarch }}
           goversion: 1.21 # 可以指定编译使用的 Golang 版本
-          binary_name: "AGHD" # 可以指定二进制文件的名称
           extra_files: README.md README_EN.md # 需要包含的额外文件
