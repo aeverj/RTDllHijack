@@ -6,6 +6,7 @@ name: build-go-binary
 on:
   release:
     types: [created] # 表示在创建新的 Release 时触发
+  workflow_dispatch: # 允许手动触发工作流
 
 jobs:
   build-go-binary:
