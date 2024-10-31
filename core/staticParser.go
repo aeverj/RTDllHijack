@@ -7,7 +7,8 @@ import (
 	"strings"
 )
 
-var known_dlls_list = []string{"kernel32.dll", "wow64.dll", "shell32.dll", "imagehlp.dll", "advapi32.dll", "wow64win.dll", "psapi.dll", "msctf.dll", "imm32.dll", "gdiplus.dll", "shcore.dll", "wowarmhw.dll", "setupapi.dll", "msvcrt.dll", "gdi32.dll", "xtajit.dll", "wldap32.dll", "combase.dll", "nsi.dll", "normaliz.dll", "oleaut32.dll", "user32.dll", "clbcatq.dll", "ole32.dll", "wow64cpu.dll", "sechost.dll", "difxapi.dll", "comdlg32.dll", "coml2.dll", "shlwapi.dll", "ws2_32.dll", "rpcrt4.dll", "ntdll.dll", "mscoree.dll", "msvcp_win"}
+var known_dlls_list = []string{"kernel32.dll", "ucrtbase.dll", "MSCTF.dll", "SHLWAPI.dll", "WS2_32.dll", "KERNELBASE.dll", "wow64.dll", "msvcp_win.dll", "gdiplus.dll", "user32.dll", "bcrypt.dll", "COMCTL32.dll", "cfgmgr32.dll", "combase.dll", "IMM32.dll", "rpcrt4.dll", "ntdll.dll", "bcryptPrimitives.dll", "coml2.dll", "win32u.dll", "wow64cpu.dll", "COMDLG32.dll", "gdi32full.dll", "IMAGEHLP.dll", "SHELL32.dll", "sechost.dll", "WINTRUST.dll", "NORMALIZ.dll", "difxapi.dll", "Setupapi.dll", "CRYPT32.dll", "gdi32.dll", "MSVCRT.dll", "wow64win.dll", "advapi32.dll", "PSAPI.DLL", "NSI.dll", "WLDAP32.dll", "OLEAUT32.dll", "SHCORE.dll", "ole32.dll", "clbcatq.dll"}
+
 
 func StaticParsePE(filePath string) (dllInfoList []models.DLLInfo, SignatureValid bool) {
 	file, err := pe.New(filePath, &pe.Options{})
