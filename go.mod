@@ -1,4 +1,4 @@
-module AGHD
+module RTDllHijack
 
 go 1.21.1
 
