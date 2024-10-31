@@ -7,7 +7,7 @@ import (
 	"strings"
 )
 
-var known_dlls_list = []string{"kernel32.dll", "ucrtbase.dll", "MSCTF.dll", "SHLWAPI.dll", "WS2_32.dll", "KERNELBASE.dll", "wow64.dll", "msvcp_win.dll", "gdiplus.dll", "user32.dll", "bcrypt.dll", "COMCTL32.dll", "cfgmgr32.dll", "combase.dll", "IMM32.dll", "rpcrt4.dll", "ntdll.dll", "bcryptPrimitives.dll", "coml2.dll", "win32u.dll", "wow64cpu.dll", "COMDLG32.dll", "gdi32full.dll", "IMAGEHLP.dll", "SHELL32.dll", "sechost.dll", "WINTRUST.dll", "NORMALIZ.dll", "difxapi.dll", "Setupapi.dll", "CRYPT32.dll", "gdi32.dll", "MSVCRT.dll", "wow64win.dll", "advapi32.dll", "PSAPI.DLL", "NSI.dll", "WLDAP32.dll", "OLEAUT32.dll", "SHCORE.dll", "ole32.dll", "clbcatq.dll"}
+var known_dlls_list = []string{"kernel32.dll", "ucrtbase.dll", "mscoree.dll", "MSCTF.dll", "SHLWAPI.dll", "WS2_32.dll", "KERNELBASE.dll", "wow64.dll", "msvcp_win.dll", "gdiplus.dll", "user32.dll", "bcrypt.dll", "COMCTL32.dll", "cfgmgr32.dll", "combase.dll", "IMM32.dll", "rpcrt4.dll", "ntdll.dll", "bcryptPrimitives.dll", "coml2.dll", "win32u.dll", "wow64cpu.dll", "COMDLG32.dll", "gdi32full.dll", "IMAGEHLP.dll", "SHELL32.dll", "sechost.dll", "WINTRUST.dll", "NORMALIZ.dll", "difxapi.dll", "Setupapi.dll", "CRYPT32.dll", "gdi32.dll", "MSVCRT.dll", "wow64win.dll", "advapi32.dll", "PSAPI.DLL", "NSI.dll", "WLDAP32.dll", "OLEAUT32.dll", "SHCORE.dll", "ole32.dll", "clbcatq.dll"}
 
 
 func StaticParsePE(filePath string) (dllInfoList []models.DLLInfo, SignatureValid bool) {
