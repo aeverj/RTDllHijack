@@ -28,7 +28,7 @@ func CopyFile(dstName, srcName string) (writeen int64, err error) {
 
 func Contains(arr []string, str string) bool {
 	for _, v := range arr {
-		if strings.Contains(strings.ToLower(str), v) {
+		if strings.ToLower(str) == strings.ToLower(v) {
 			return true
 		}
 	}

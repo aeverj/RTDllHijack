@@ -1,8 +1,8 @@
 package main
 
 import (
-	"AGHD/models"
-	"AGHD/runner"
+	"RTDllHijack/models"
+	"RTDllHijack/runner"
 	"fmt"
 	"github.com/urfave/cli/v2"
 	"os"

@@ -1,8 +1,8 @@
 package core
 
 import (
-	"AGHD/models"
-	"AGHD/utils"
+	"RTDllHijack/models"
+	"RTDllHijack/utils"
 	"github.com/saferwall/pe"
 	"strings"
 )

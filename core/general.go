@@ -1,7 +1,7 @@
 package core
 
 import (
-	"AGHD/models"
+	"RTDllHijack/models"
 	"fmt"
 	"strings"
 )

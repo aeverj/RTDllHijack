@@ -1,9 +1,9 @@
 package runner
 
 import (
-	"AGHD/core"
-	"AGHD/models"
-	"AGHD/utils"
+	"RTDllHijack/core"
+	"RTDllHijack/models"
+	"RTDllHijack/utils"
 	"fmt"
 	"os"
 	"path/filepath"
