@@ -19,7 +19,7 @@ jobs:
       - uses: actions/checkout@v3
       - uses: wangyoucao577/go-release-action@v1
         with:
-          github_token: ${{ secrets.TOKEN }} # 一个默认的变量，用来实现往 Release 中添加文件
+          github_token: ${{ secrets.GITHUB_TOKEN }} # 一个默认的变量，用来实现往 Release 中添加文件
           project_path: ./cmd/
           goos: ${{ matrix.goos }}
           goarch: ${{ matrix.goarch }}
